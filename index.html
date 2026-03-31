@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bellaura Studio | Arte que transforma a sua essência</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#4d463a",
+              "surface-container": "#2b1c17",
+              "primary": "#e5c483",
+              "surface-variant": "#42312b",
+              "surface-container-lowest": "#180b07",
+              "on-primary": "#402d00",
+              "surface-container-high": "#362621",
+              "primary-fixed": "#ffdf9f",
+              "on-background": "#f8ddd4",
+              "tertiary-fixed": "#e4e2df",
+              "on-tertiary-container": "#41413f",
+              "on-secondary-fixed-variant": "#613e33",
+              "secondary-fixed-dim": "#edbbac",
+              "primary-container": "#c8a96a",
+              "on-secondary-fixed": "#2f140b",
+              "tertiary": "#cac8c6",
+              "inverse-on-surface": "#3d2d27",
+              "surface-tint": "#e3c281",
+              "on-tertiary-fixed": "#1b1c1a",
+              "inverse-surface": "#f8ddd4",
+              "tertiary-container": "#aeadaa",
+              "inverse-primary": "#735b24",
+              "on-primary-fixed-variant": "#5a430e",
+              "secondary": "#edbbac",
+              "on-primary-container": "#533d07",
+              "secondary-container": "#613e33",
+              "surface": "#1d100b",
+              "primary-fixed-dim": "#e3c281",
+              "on-surface-variant": "#d0c5b5",
+              "on-secondary-container": "#daaa9b",
+              "on-tertiary-fixed-variant": "#474745",
+              "on-tertiary": "#30312f",
+              "surface-container-highest": "#42312b",
+              "tertiary-fixed-dim": "#c8c6c4",
+              "surface-bright": "#46352f",
+              "on-surface": "#f8ddd4",
+              "outline": "#998f81",
+              "on-primary-fixed": "#261a00",
+              "error": "#ffb4ab",
+              "error-container": "#93000a",
+              "on-error-container": "#ffdad6",
+              "background": "#1d100b",
+              "surface-dim": "#1d100b",
+              "on-secondary": "#47281e",
+              "on-error": "#690005",
+              "surface-container-low": "#261813",
+              "secondary-fixed": "#ffdbd0"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.75rem", 
+                "lg": "1rem", 
+                "xl": "1.25rem", 
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(29, 16, 11, 0.6); backdrop-filter: blur(12px); }
+        .editorial-shadow { box-shadow: 0 20px 40px rgba(29, 16, 11, 0.15); }
+        .gold-gradient { background: linear-gradient(45deg, #e5c483, #c8a96a); }
+        .marquee-track { animation: marquee 30s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1d100b; }
+        ::-webkit-scrollbar-thumb { background: #c8a96a; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Header / TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 max-w-7xl mx-auto py-6">
+<div class="flex items-center">
+<img alt="Bellaura Studio Logo" class="w-auto object-contain h-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5eKT09tpOZuyN2MbeBKzfg6F5eDrd-Nhnf4PHasrB-FLjHOv_d0phBT1VdTbzrsRNex3dHM9Hk4E6GoQayUCg9Yg1IxlRg0pM4zTlcV8HyfQjwRgChbVWHAtkV3_FGHvgWtyvgL9ACKbl5MedgacTWIh1YjsHewUpLlJJ1ffQjhoCUdb84pUqTKIHcxKyspr3QzBgo5Lk5pSZDvEyN3L_CjP1yI6IEcMAqGS4pHcssulqullE3BEvhDHmLyv7AWWOTuSESTI42k6t"/>
+</div>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="font-headline italic text-lg tracking-wide text-primary border-b-2 border-primary pb-1" href="#services">Services</a>
+<a class="font-headline italic text-lg tracking-wide text-on-surface/60 hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="font-headline italic text-lg tracking-wide text-on-surface/60 hover:text-primary transition-colors duration-300" href="#portfolio">Portfolio</a>
+<a class="font-headline italic text-lg tracking-wide text-on-surface/60 hover:text-primary transition-colors duration-300" href="#team">Team</a>
+</nav>
+<button class="gold-gradient text-on-primary px-8 py-3 font-bold tracking-wider hover:scale-105 transition-transform duration-400 ease-out active:scale-95 uppercase text-xs rounded-lg">Agendar Horário</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="high fashion close-up portrait of woman with flowing silky brown hair, elegant movement, warm editorial lighting with dark mocha shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvgY9i-iGipEgWwM2Pbw2u8oHP_p_9mizogKNmNtRx_AnVSBgTQLEd3VkHkQHBWAchQq1tRj3PYpGVD0gvyNylb7Jtw1dfT8mYr58FuuLBLgS61aHkNOFGEQetep5lnM2FH12Fq9jRcBXpJ-9gLSberCG1xFu8R699H4eDHOIzG5uneyLuqPkGISQb1mKd5v0iapdm59JhhpPwVBPIuhjO0aeQMKrZAptNb2k7_EB4lrj92Hq20T6wBldE0fjhNI4_Q2Ddn727ZHwJ"/>
+<div class="absolute inset-0 bg-surface/40 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/20 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 max-w-5xl">
+<div class="w-10 h-[2px] bg-primary mb-8"></div>
+<h1 class="text-6xl md:text-8xl font-headline font-light leading-tight mb-8">
+                Arte que <br/>
+<span class="italic font-bold text-primary">transforma</span> a sua essência
+            </h1>
+<p class="text-on-surface/80 text-lg md:text-xl max-w-xl mb-12 font-light tracking-wide">
+                Experiências personalizadas que elevam sua beleza natural através de uma curadoria técnica de excelência e análise especializada.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="gold-gradient text-on-primary px-10 py-5 font-bold tracking-widest hover:scale-105 transition-transform duration-400 shadow-xl rounded-lg">
+                    AGENDAR HORÁRIO
+                </button>
+<button class="border border-primary/20 text-on-surface px-10 py-5 font-bold tracking-widest hover:bg-primary/5 transition-colors rounded-lg">
+                    VER SERVIÇOS
+                </button>
+</div>
+</div>
+</section>
+<!-- Marquee -->
+<div class="bg-surface-container-lowest py-8 overflow-hidden">
+<div class="flex whitespace-nowrap marquee-track">
+<div class="flex items-center space-x-12 px-12">
+<span class="text-primary font-headline italic text-3xl">Coloração Premium</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Balayage &amp; Mechas</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Corte &amp; Estilo</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Análise Especializada</span>
+<span class="text-on-surface/20 text-xl">•</span>
+</div>
+<div class="flex items-center space-x-12 px-12">
+<span class="text-primary font-headline italic text-3xl">Coloração Premium</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Balayage &amp; Mechas</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Corte &amp; Estilo</span>
+<span class="text-on-surface/20 text-xl">•</span>
+<span class="text-primary font-headline italic text-3xl">Análise Especializada</span>
+<span class="text-on-surface/20 text-xl">•</span>
+</div>
+</div>
+</div>
+<!-- About Section -->
+<section class="bg-[#FAF8F5] py-24 md:py-32 px-8 overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<img class="w-full h-[600px] object-cover rounded-xl relative z-10 editorial-shadow" data-alt="professional luxury hairstylist woman delicately styling hair of a client in a bright upscale ivory salon setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASCduxCyhl0ypJYKCHHce556xIj9PNx5vxLLLv8L7Q_59LQZiBMQpq_12o0yp4VDPADsO7xX0E-vxJUmJzDcJVbok-i4fNI1UIZP2LUIkHWRvpQsbY0MnrskqD1zIix1-VC-sHXo1HNjapFLZ0xrHi94JO6D1_rxh0WAdt8b9BGK2JKblOzhDp73P23dDk7cQkX5RdQxbLJb6NO2FN548H0UBJwE7HuJmL52ON0lZDiogH8xjZD0aMF5VfWyZK8OJ0yhCWblzf6Ury"/>
+<div class="absolute -bottom-12 -right-12 bg-surface text-on-surface p-12 z-20 hidden md:block rounded-xl">
+<p class="font-headline italic text-3xl text-primary mb-2">15 Anos</p>
+<p class="font-label uppercase tracking-widest text-xs opacity-60">De Excelência</p>
+</div>
+</div>
+<div class="text-surface">
+<div class="w-10 h-[2px] bg-primary mb-8"></div>
+<h2 class="text-5xl md:text-6xl font-headline font-light mb-8 leading-tight">Onde o cuidado se torna <span class="italic text-primary-container">obra de arte</span>.</h2>
+<p class="text-surface/70 text-lg mb-12 font-light leading-relaxed">
+                    No Bellaura Studio, acreditamos que cada cliente é uma tela única. Nossa filosofia une a tradição da alta chapelaria francesa com suporte técnico de ponta para revelar sua melhor version.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-surface-container-low/5 p-6 border-l-2 border-primary rounded-lg">
+<p class="font-headline italic text-xl mb-1 text-surface">Curadoria</p>
+<p class="text-sm text-surface/60 font-body">Produtos exclusivos Kérastase e L'Oréal Professionnel.</p>
+</div>
+<div class="bg-surface-container-low/5 p-6 border-l-2 border-primary rounded-lg">
+<p class="font-headline italic text-xl mb-1 text-surface">Visagismo</p>
+<p class="text-sm text-surface/60 font-body">Estudo profundo das linhas do rosto e personalidade.</p>
+</div>
+<div class="bg-surface-container-low/5 p-6 border-l-2 border-primary rounded-lg">
+<p class="font-headline italic text-xl mb-1 text-surface">Inovação</p>
+<p class="text-sm text-surface/60 font-body">Consultoria personalizada através de mapeamento capilar.</p>
+</div>
+<div class="bg-surface-container-low/5 p-6 border-l-2 border-primary rounded-lg">
+<p class="font-headline italic text-xl mb-1 text-surface">Sustentabilidade</p>
+<p class="text-sm text-surface/60 font-body">Compromisso com o descarte consciente e produtos veganos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 px-8 bg-surface" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-headline italic font-light mb-4">Serviços <span class="text-primary">Assinatura</span></h2>
+<div class="w-10 h-[2px] bg-primary mx-auto mb-4"></div>
+<p class="text-on-surface/60 font-label tracking-widest text-sm uppercase">Curadoria técnica exclusiva</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Card 1: Coloring -->
+<div class="md:col-span-2 group relative overflow-hidden bg-surface-container rounded-xl">
+<img class="w-full h-full object-cover opacity-50 transition-transform duration-1000 group-hover:scale-110" data-alt="close up of vibrant professional hair coloring application on beautiful textured hair in a salon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1q_GFC8Ym3YAsUM2O_aqby1NJM9dnoOi-dYf0lBNSP8M873X1pMD4zFHYH-r8qZNK0vPNwjV-1EaR8IX0wsYpmDg3YVra6Cg2DKFRaCW2Tf6gzEDpt9Avu8557BROhvfnkRZsjjV4GNWSzCsJZz8tD4Rh4_yEy0pplsvb1OMVKBCTBZez-TsjCjZkuUasVsNfozGn_RA-QNtBoaEF7HXett7TmTdvy9jJH8meDIwx0xdjfnSqCvL38dd76uYbTKqLTN5wW4a7GzpT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-3xl font-headline italic mb-2">Coloração High Definition</h3>
+<p class="text-on-surface/60 font-light mb-4 max-w-sm">Pigmentação multidimensional com brilho espelhado.</p>
+<a class="text-primary font-label text-xs uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all" href="#">Explorar <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Card 2: Specialized Analysis -->
+<div class="group relative overflow-hidden bg-surface-container-high rounded-xl">
+<img class="w-full h-full object-cover opacity-40 transition-transform duration-1000 group-hover:scale-110" data-alt="modern technological hair analysis tool reflecting light in a futuristic salon setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9fGXZMTFOnj_KAvvcGhhqXrObdFOuITCOiKEXyUNt2Fmurm_Zh24q7bIhvmGgRTOydo3NgT04L1n85PRao8ZMU3O81y_CSRXYfejuBhDEarmivrRgwqM8f0JIjRdZl5C84XI5wg-XHHFywN52DcGb4AKMUUrDqn9kGSrGvMsVDjE_JbMFzg6G52qMG7LWiW6NKRJsUyVvgl2rmJIyE0-kGQdS5yeNFXb4FHJgySnDp-Bzbge6iQ7byIqxrCybHUVMYByKk7h7cEPi"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8">
+<span class="inline-block px-3 py-1 bg-primary/20 text-primary text-[10px] uppercase tracking-widest w-fit mb-4 rounded-full">Exclusivo</span>
+<h3 class="text-2xl font-headline italic mb-2">Análise Especializada</h3>
+<p class="text-sm text-on-surface/60 font-light">Mapeamento detalhado da saúde capilar.</p>
+</div>
+</div>
+<!-- Card 3: Cut -->
+<div class="group relative overflow-hidden bg-surface-container-high rounded-xl">
+<img class="w-full h-full object-cover opacity-40 transition-transform duration-1000 group-hover:scale-110" data-alt="stylist hands performing a precise artistic haircut on a woman with dark hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQVueGK2FNeRqSqv6hMSOo5ZMFsRXlnfD8Sz7UYmkXta1B08EtFDlI225CWfja2aqZpBheGQJ4t66ZjChsBI0cVs1XZAAfKLHvi3u8LC-oe3nUQGSmPx4B3VYMrzV7WbEjOkz6HSwlQ4GH0BU8Hb-gxF-o7SUBgeOFpo_V-Mu5RMG9dMREuNVBGWOzBk21bAS_3KIYxrOBvJJq_dDAanMdSwDhk33U_y3exmHrFtUj-mQUMFgq9gwGjeHfH9rRa8IbZK11ACB78mD"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8">
+<h3 class="text-2xl font-headline italic mb-2">Corte &amp; Design</h3>
+<p class="text-sm text-on-surface/60 font-light">Linhas que harmonizam com o seu rosto.</p>
+</div>
+</div>
+<!-- Card 4: Balayage -->
+<div class="md:col-span-2 group relative overflow-hidden bg-surface-container rounded-xl">
+<img class="w-full h-full object-cover opacity-50 transition-transform duration-1000 group-hover:scale-110" data-alt="stunning sun-kissed balayage highlights on long wavy blonde hair from behind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUbfieDbddhkfzCoJVOetadQ98v1DFguBAJ3AfdjlMSsVvWSTI2je2azXllaA86KIX6TCNCoMU-6sW0cH5_J9Ve_3G2L8CWDOe1c6-2FTVPiD0o51h24SzOWbsPhfENhwDWa0cY6PPLChv1ihGlHpHv_gIQq3LztGuzWzvwn1ytn0KrWu9ihkczmeeOwsWJYSDs7_zosIsfWJejKjmTzHUaMu-imnpeGEwHot6ZFMcjnjESTHPpFGP_l4jLJf8no3pzFXEimcTCa9"/>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+<div>
+<h3 class="text-3xl font-headline italic mb-2">Balayage Soleil</h3>
+<p class="text-on-surface/60 font-light max-w-sm">O efeito do sol capturado em cada mecha.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-4xl">flare</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="bg-surface-container-low py-24 overflow-hidden" id="portfolio">
+<div class="px-8 mb-12 flex justify-between items-end max-w-7xl mx-auto">
+<div>
+<h2 class="text-4xl font-headline font-light mb-2">Portfolio <span class="italic text-primary">Transformações</span></h2>
+<div class="w-10 h-[2px] bg-primary"></div>
+</div>
+<p class="hidden md:block text-on-surface/40 font-label text-sm uppercase tracking-widest">Arraste para navegar</p>
+</div>
+<div class="flex space-x-8 overflow-x-auto pb-12 px-8 no-scrollbar scroll-smooth">
+<div class="flex-none w-[450px]">
+<div class="grid grid-cols-2 gap-2 mb-4">
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation before after photo showing flat dull hair versus vibrant copper layers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI4yqQ5qLZ3nInOb6s55tMdnGDfzyeI0lJsdRFR7lXmp0wKZ6-L-FfdTb1nL6a5eR7JNCNEbhchyyBTfAuPLLYEUeQG7uvQ-XIy9V4VlSs25c8csnhAH88tk1hULfSdWluuR-0rVe1U3XEqqk0aNo0q2bcrQxyebhjUnyx5vKPMmxYauBqJDxJifAO-Yb1N-jI6i3Z1X4iysuoMXSonSlyxAPVvPMcdcK8d43GUZv4vDHO6WNuywY3Z9hikhGbG_Mq5O2aAHjgFWE0"/>
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation after photo with radiant copper hair styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu6CQaSydWSzfpNGXU_96xpqHB7cTyXPkV2ZDblHMjm8TsIJJJjY2bieNVyASVXtXRKkPZGX7pSeXXA1YBGhYNNAAeAVqBrN72Ti2CoDzrO1sqoZK_5FOZyU6FwkSArmtNLcTz6k9jLEoLl-G53LO6aggmQtSuEXf53z6Zhwo643mAMpj0q_aT2QqvnTjgLOiRDAPhKz0ImfYFQSQdn_klSvo8kdoqaroHn8aPBlBZgaFHiuZ_buaND_quky4CPxhTaKfR9E-q_5Lr"/>
+</div>
+<h4 class="font-headline italic text-lg">Copper Radiance</h4>
+<p class="text-on-surface/40 text-sm">Coloração &amp; Tratamento Reconstrutor</p>
+</div>
+<div class="flex-none w-[450px]">
+<div class="grid grid-cols-2 gap-2 mb-4">
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation before photo with dark natural hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfzLjdQeuDetv-YtY5Z8d2S3znCnx_xypd5TTZ-HSKD161DGKxFXQWXNggo4w2koRpnkzaHVX-Rn2Yc43mgQm6l-eaXIorm_cL2ydQCkSpFGDGCW-mWPcZRCAaHatwAc_Sf6fE7JsxQF25ZT173pxdGkJ4V-bJq6gu9NUOPdmTem9SL6zP4KQK6zt2WGiMUbemf-x3Z0__gDjXs33n8BVkwY6JwOpn1C4_5-8BMBDTG6lEGfIvJmxT2fR9q8CVfME_V8KJ0Wib9eHo"/>
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation after photo with creamy blonde balayage and beach waves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvM2gdnaiOU7d3fmsvMP3vbts5_IJ7VSaqFyM3_7UWH7gZtS_w7TL7HI4-6ibaVJybvVuN-8SF-myny2qVXiYi7cJhIhjBFVjqe55H4Y-KpQoQCah_esPeIG2APqonJRhSH9jkiC7T1aKTC_w3AQX6Wyg6iEVZafqdqENyvQWqhaKgQcWWxLcGalK8JT-Dd-_yHs83EFxGQws-BDMUfhUqxAboh8Jxt9lgvgI3pSNJrOway0bhnnRdrVBg7zByIVfQv3p9S3d7dHP"/>
+</div>
+<h4 class="font-headline italic text-lg">Curvaturas Reais</h4>
+<p class="text-on-surface/40 text-sm">Corte &amp; Definição Especializada</p>
+</div>
+<div class="flex-none w-[450px]">
+<div class="grid grid-cols-2 gap-2 mb-4">
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation before with frizzy hair texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcP-hRBDl3SA6RVFhlTV2vh3UF8cyiicMxdTg4lbQeUr7250x2Uf95fW-qWbannux4YrGyO8-bZxb2lzrDkUNUYhZ5Hqx3wVejAeQTBxHqmGvodQN0dbjHvkfPQLY6mCNWl3LDo-15dCv5mxTaHqddpHmtbCG2zs7ny1ChgBZExGiryHcSSTe4-ZLIExhiXOF5Qz_rSSt9pfz-lcaxMjd1-qvm5fZTiR11BmjX8lnjGgqNZFoUQQ1vl3Dlh4FF3OCduUtLdkIHIfBm"/>
+<img class="h-64 w-full object-cover rounded-lg" data-alt="hair transformation after photo with silky sleek dark hair styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJMt8lgX5WMFVLRGrIhcynZPVYBzgXne83KMJzrLDrUKM4ePtL8Bx-opEIGYPIuZXsfx-DuA73NpS5ltit_ADhrt5B3X9YefrD-_cEskULJeJlaR32UueKARfp5al_Z3cy5Ir5BFeV2xv2Wb1dF4lOctAZgogA0cPlZUZWNw0TuQjQClBAefO4FGf7-TWY8cuSkP4UC0A0mXjuhfdXXQGx55XxjHvUzNAg2b4OFDnrzgE8Zf1eTFTNZydKJAMm8Fl8ZwueyYQ0c59K"/>
+</div>
+<h4 class="font-headline italic text-lg">Mocha Silk</h4>
+<p class="text-on-surface/40 text-sm">Tonalização &amp; Escova de Brilho</p>
+</div>
+</div>
+</section>
+<!-- Stats Strip -->
+<div class="bg-surface py-16 border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<p class="text-4xl font-headline italic text-primary mb-1">5k+</p>
+<p class="text-xs uppercase tracking-widest text-on-surface/40">Clientes Satisfeitas</p>
+</div>
+<div>
+<p class="text-4xl font-headline italic text-primary mb-1">12</p>
+<p class="text-xs uppercase tracking-widest text-on-surface/40">Prêmios Design</p>
+</div>
+<div>
+<p class="text-4xl font-headline italic text-primary mb-1">100%</p>
+<p class="text-xs uppercase tracking-widest text-on-surface/40">Produtos Premium</p>
+</div>
+<div>
+<p class="text-4xl font-headline italic text-primary mb-1">20+</p>
+<p class="text-xs uppercase tracking-widest text-on-surface/40">Especialistas</p>
+</div>
+</div>
+</div>
+<!-- Team Section -->
+<section class="py-24 px-8 bg-surface-container-lowest" id="team">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="text-5xl font-headline font-light mb-4">Nossos <span class="italic text-primary">Artistas</span></h2>
+<div class="w-10 h-[2px] bg-primary"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="group">
+<div class="relative overflow-hidden mb-6 rounded-xl editorial-shadow">
+<img class="w-full h-[500px] object-cover transition-all duration-700" data-alt="Professional candid portrait of a female hairstylist working in a luxury studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxa-ZLc7GJJ-25hGyAsVrs1_TbRe_HartFdeF3DhaDlONn8EzqftTrsdaEQ6acMjVJBw_yIsrO5t2jDY12XOgmV1EhNMrE_1JtK7uu5jYHNBgEojSof_eSTraUxDv2VF2469xJuOSlvs9QI2at6T_Yc-jPTSlN3gkYJU4teuQ1TUdSuEwZg2_qtNxv5Q8dTmu5KZh9JoeGSLM1yWUx33SqX0C8O2HaS3Pf2b6pl_dqIhh13PKTO9LsaQCSvQUJJjDrZ1eJfpWV1K6x"/>
+</div>
+<h3 class="text-2xl font-headline italic mb-1">Isabella Viana</h3>
+<p class="text-primary text-sm uppercase tracking-widest font-label mb-4">Creative Director &amp; Colorist</p>
+<p class="text-on-surface/60 font-light text-sm">Especialista em loiros platinados e visagismo emocional.</p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden mb-6 rounded-xl editorial-shadow">
+<img class="w-full h-[500px] object-cover transition-all duration-700" data-alt="Close up professional photo of a skilled female hair stylist in a modern salon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Etc-_ND8u-jYqwauB8Cnc_oAwiCwKliwNMCuM-FH9tkJ7YWs6i1FDLuarXDBV1GenB_6-IqRE42fGz2EidUxM3EMXXNC6TNYMq_JThY1NGYgUjw18L4BsRbxKTv_nshRCPhMWoZjnEi6lYIewmaT2deJs4x642cgYE9rmIJMnTgI6_moJN6vn0mUDhvLkvwyoLI9V9U5fppdzwsWZ89K-bhRdaf4xiOg32DGIqjabOBNoYeu9rIReJZ-fnIHGDz6ToKAJlspVKZW"/>
+</div>
+<h3 class="text-2xl font-headline italic mb-1">Camila Torres</h3>
+<p class="text-primary text-sm uppercase tracking-widest font-label mb-4">Senior Stylist</p>
+<p class="text-on-surface/60 font-light text-sm">Referência nacional em cortes geométricos e texturização.</p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden mb-6 rounded-xl editorial-shadow">
+<img class="w-full h-[500px] object-cover transition-all duration-700" data-alt="Portrait of a friendly professional female stylist in a high-end hair studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_0HoNx7lP3rQUDZRcH6XnI7QB_lGCd2_sO-jHZYjc4-nYvN9j5H0_Izsg6YiXSMh02Veoyf9qYCcWyoFyZnLpoJRxe5DzURGGDMn4Eo2WdXD258FAQ0RiW5miPYNHwz8xAR2ZJaMnD3IWiGSq-39WWkKzHQmGM421dvaLcEO4OKW5KJSvGQhY4NzNPpUXGWU-fQab0YsAvfZjrXhJg_ohFvgrylqo23hUPh_akcMkDpKTaSjIRi473ZJSMjMTYgHOD7OkAuQd2L4V"/>
+</div>
+<h3 class="text-2xl font-headline italic mb-1">Beatriz Luz</h3>
+<p class="text-primary text-sm uppercase tracking-widest font-label mb-4">Bridal Specialist</p>
+<p class="text-on-surface/60 font-light text-sm">A magia por trás dos penteados das noivas mais sofisticadas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section (Rebranded from AI Tech) -->
+<section class="relative py-32 overflow-hidden bg-surface-container-high">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="luxurious modern salon interior with gold accents, sleek furniture and high tech equipment in a warm atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwdgApeh_Jcu5rr52Fh-LGFvNmUj6pzcqG8uLyPI6AMQusYhREP4k5lGwAwO8PR61W5kRGOMhHBShpQd1FdSXYDQvBPNH26VPWn_r0yK7r2Y5gjqZfh2ohtjq1mO1FJBaNlxEwGmlYtSmep_UhFrRLO6oMsOTe6kOkLPE7zmVW6TY5xWSa-JRK694g-vqXWIxItrDGsgIHJntfg3c1sT_lGTjzT8cy6OoCde8crGO7L57_gcHhHhJm6FdeFmYf6VK2166SeQVMu3mb"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-high via-surface-container-high/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div>
+<span class="text-primary font-label text-xs uppercase tracking-widest mb-4 inline-block">Experiência Bellaura</span>
+<h2 class="text-5xl font-headline font-light mb-8 leading-tight">Ciência e Cuidado em <span class="italic text-primary">perfeita harmonia</span>.</h2>
+<p class="text-on-surface/70 text-lg mb-12 font-light">
+                    Aliamos a sensibilidade do toque humano a ferramentas de análise avançada para diagnosticar as necessidades biológicas dos seus fios. Um cuidado preciso, desenhado exclusivamente para você.
+                </p>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full border border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">biotech</span>
+</div>
+<p class="font-headline italic text-xl">Análise Especializada em 5 minutos.</p>
+</div>
+</div>
+<div class="bg-surface/80 p-8 rounded-xl editorial-shadow backdrop-blur-md border border-outline-variant/10">
+<div class="space-y-6">
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-on-surface/60">Fibra Capilar</p>
+<p class="text-primary font-headline italic text-lg">Integridade 85%</p>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<p class="text-sm font-label uppercase tracking-widest text-on-surface/60">Hidratação</p>
+<p class="text-primary font-headline italic text-lg">Ótima</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-sm font-label uppercase tracking-widest text-on-surface/60">Recomendação</p>
+<p class="text-primary font-headline italic text-lg">Ritual Fusio-Dose</p>
+</div>
+</div>
+<button class="w-full mt-8 py-4 border border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-400 font-bold tracking-widest rounded-lg">INICIAR CONSULTORIA</button>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline italic font-light">Vozes de <span class="text-primary">Elegância</span></h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-10 bg-surface-container-low rounded-xl">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface/80 mb-8 font-light leading-relaxed">"O atendimento no Bellaura é algo que nunca vi em nenhum outro lugar do mundo. Isabella transformou meu cabelo e minha autoestima."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a real female client smiling happily with beautiful hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGRiPTKeyVULwatyKPtIFMoEc0UaiD5gTocJizocdV35I1pQWniZnPLk2TkuV-Rylk7-86tmgI_AEdepStEsazXHcL4UrWJIydv2Ro-CDgXf-CIfbHANwve1El-nwBNeCCFq6XAEASBDj7aEx7uqclBE_EQVZnPVC_FNIhvvYkjQA_lBcXxqvYiuCoNorDUVxS9fi_EvHuehl96F1DcDf1j8jHEmCM74d_YgO0wfJil3n6_pQd02JmYdPmmiekOFn14Akgd-0DN_xC"/>
+<div>
+<p class="font-headline italic">Helena Montenegro</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface/40">Empresária</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface/80 mb-8 font-light leading-relaxed">"A consultoria personalizada foi um divisor de águas. Finalmente entendi o que meu cabelo precisava. O resultado é simplesmente impecável."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="happy real client woman with beautiful radiant hair and glowing skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxMotyG4XUcdbwSxUo5_3JFF_jOoVyvYzoHv1kdnYJf2mkhDtdcABcHMwwdXbecaEkn6mKn8idtojzQg5MKLayOSq9BGYX8vNoXY25v2zyWbb4OBApqxME4ddqxcG1ISQBgg9uMp70Yo3c86i1_AAPZ3VG8srU2Nfx8oupgdvCs_vQ1cF9bIRAsjhKeI1RDozjF9XjAVhIfZS96qYjvIGeOz8spvVNvffnd0h_BIC4xQnmsS3prWMg-BvP2pCi8935NMPNnQS8FL-"/>
+<div>
+<p class="font-headline italic">Mariana Costa</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface/40">Arquiteta</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface/80 mb-8 font-light leading-relaxed">"Vim para o meu casamento e o trabalho da Beatriz foi um sonho. Me senti a mulher mais bonita do mundo."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="real client woman with elegant wedding hair styling and natural beauty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfeL8ryUiRHgnyHFpE9Ly3N1odM9z8gsjsJZfp-AVhbhQE10kODRJIiyJ6mAvb9SVANbBB901c5HImQlpVTjSTz54srt99MZz2H_T2Crf3YcqtBV8MlnbeNYngj4WSO8l7SbdxB4EbdfAhk_9X_E8vAsFFYZkBYiLppgBJDvzsVG5tcopBSu9pfhXxE86b3KsrBElRj_TcOdwl1Lna3dcs7k5mFRL52kLjsDy5ZvvT9wf01GhhWhmdcvJZ7KnY9K83M9w7l2Ywa83e"/>
+<div>
+<p class="font-headline italic">Clara Paiva</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface/40">Designer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="grid md:grid-cols-2 min-h-[700px]">
+<div class="relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" data-alt="atmospheric salon interior with warm golden lighting and luxurious architectural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaq1aLsKTYbflIM76n7XuriBjGOiD-hem0L8UVTqSmF7WXLvbB7JFwR_MD8ozBStq0SMNHunym3NlCi9XeYXse_fmnWBcwKJC-3TFg30K1_Pa1AunagDlRZHoUt7-lUlF-Jv7IlzbkYCfF3UXh3IZJ50ivyKONrPA9ib3iBdm1XTWrg3qhdy6KfQgbUptprvkk1bAN0Fw6sPhmfkAoUOvvMNyGRv713vxWDcWir0TnnE7IZOoHYghFLbMeA4T9dl5dNHYOyTCzobWO"/>
+<div class="absolute inset-0 bg-surface/60 flex items-center justify-center">
+<div class="text-center p-8">
+<p class="font-headline italic text-4xl mb-4">Seu momento de luxo começa aqui.</p>
+<div class="w-12 h-[2px] bg-primary mx-auto"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 md:p-24 flex flex-col justify-center">
+<h2 class="text-4xl font-headline font-light mb-12">Reservar <span class="italic text-primary">Experiência</span></h2>
+<form class="space-y-8">
+<div class="group relative">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary transition-all font-light placeholder:text-on-surface/30" placeholder="Nome Completo" type="text"/>
+</div>
+<div class="group relative">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary transition-all font-light placeholder:text-on-surface/30" placeholder="E-mail" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="group relative">
+<select class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary transition-all font-light text-on-surface/30 appearance-none">
+<option>Selecione o Serviço</option>
+<option>Balayage Soleil</option>
+<option>Corte Design</option>
+<option>Coloração HD</option>
+</select>
+</div>
+<div class="group relative">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-4 focus:outline-none focus:border-primary transition-all font-light text-on-surface/30" type="date"/>
+</div>
+</div>
+<button class="w-full gold-gradient text-on-primary py-6 font-bold tracking-[0.2em] shadow-2xl hover:scale-[1.02] transition-transform rounded-lg" type="submit">SOLICITAR AGENDAMENTO</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest text-on-tertiary-fixed font-body">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 py-20 gap-12 max-w-7xl mx-auto">
+<div class="max-w-xs">
+<div class="mb-6">
+<img alt="Bellaura Studio Logo" class="w-auto object-contain h-24" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5eKT09tpOZuyN2MbeBKzfg6F5eDrd-Nhnf4PHasrB-FLjHOv_d0phBT1VdTbzrsRNex3dHM9Hk4E6GoQayUCg9Yg1IxlRg0pM4zTlcV8HyfQjwRgChbVWHAtkV3_FGHvgWtyvgL9ACKbl5MedgacTWIh1YjsHewUpLlJJ1ffQjhoCUdb84pUqTKIHcxKyspr3QzBgo5Lk5pSZDvEyN3L_CjP1yI6IEcMAqGS4pHcssulqullE3BEvhDHmLyv7AWWOTuSESTI42k6t"/>
+</div>
+<p class="text-on-surface/60 font-light text-sm leading-relaxed mb-8">
+                    Elevando os padrões de beleza capilar através da arte, técnica e consultoria personalizada.
+                </p>
+<div class="flex gap-4">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16 flex-grow justify-end">
+<div>
+<h4 class="font-headline italic text-primary text-lg mb-6">Menu</h4>
+<ul class="space-y-4 text-sm text-on-surface/60 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Início</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Serviços</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Portfolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Equipe</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline italic text-primary text-lg mb-6">Suporte</h4>
+<ul class="space-y-4 text-sm text-on-surface/60 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Contato</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Políticas</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-headline italic text-primary text-lg mb-6">Localização</h4>
+<p class="text-sm text-on-surface/60 font-light leading-relaxed mb-4">
+                        Av. das Castanheiras, 1020<br/>
+                        Jardins, São Paulo - SP
+                    </p>
+<p class="text-sm text-on-surface/60 font-light">
+                        +55 (11) 99876-5432<br/>
+                        contato@bellaura.studio
+                    </p>
+</div>
+</div>
+</div>
+<div class="px-12 py-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-on-surface/30">
+<p>© 2024 Bellaura Studio. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 w-16 h-16 gold-gradient rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50" href="#">
+<span class="material-symbols-outlined text-on-primary text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</body></html>
